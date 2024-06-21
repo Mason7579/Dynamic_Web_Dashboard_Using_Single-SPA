@@ -1,0 +1,98 @@
+#app {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+  padding: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 1.125rem;
+}
+
+#app-table {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#bottom-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  min-height: 2rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+#live-indicator {
+  color: #4ade80;
+  font-size: 1rem;
+}
+
+#offline-indicator {
+  color: #f87171;
+  font-size: 1rem;
+}
+
+#table-pagination {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  #app-header {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+  }
+  #table-cell {
+    font-size: 0.8rem;
+  }
+  #live-indicator {
+    font-size: 0.8rem;
+  }
+  #offline-indicator {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #table-cell {
+    font-size: 0.6rem;
+  }
+  #live-indicator {
+    font-size: 0.6rem;
+  }
+  #offline-indicator {
+    font-size: 0.6rem;
+  }
+}
